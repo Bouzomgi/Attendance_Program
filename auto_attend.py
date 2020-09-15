@@ -12,9 +12,6 @@ client = gspread.authorize(creds)
 # Make sure you use the right name here.
 sheet = client.open("PyLO Attendance").get_worksheet(1)
 
-#print(sheet.col_values(1))
-#print(sheet.find("Chien-Chi").row)
-
 
 #Returns the common row. Returns 0 if there is no common row
 def compare_lists(lst1, lst2):
